@@ -1,6 +1,6 @@
 exports.config = {
 
-    specs: ['./specs/paymentSuccess-spec.js'],
+    specs: ['./specs/*-spec.js'],
 
     onPrepare: function() {
       browser.driver.manage().window().maximize();

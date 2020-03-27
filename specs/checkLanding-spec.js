@@ -1,5 +1,9 @@
-describe('Navigate to Landing page,', function(){
-    it('should be able to load landing page.', function() {
-        browser.get('https://www.saucedemo.com/index.html');
+var EC = protractor.ExpectedConditions;
+
+var landingPage = require('../pageObjects/landingPage.js');
+
+describe('Landing Page,', function(){
+    it('should be able to load successfully.', function() {
+        landingPage.navigateToPage();
     });
 });
