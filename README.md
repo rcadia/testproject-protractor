@@ -16,3 +16,7 @@ To add more maintainability on the tests, I've created a JSON file that stores a
 ## High Level Diagram
 
 ![High-level-flow](https://i.imgur.com/okD8g4q.png)
+
+## Screencapture Demo
+
+![Demo](https://i.imgur.com/jzqlrVR.gif)
