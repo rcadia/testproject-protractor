@@ -1,5 +1,3 @@
-var EC = protractor.ExpectedConditions;
-
 var landingPage = require('../pageObjects/landingPage.js');
 
 describe('Landing Page,', function(){
