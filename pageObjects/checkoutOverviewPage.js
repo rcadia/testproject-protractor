@@ -1,14 +1,17 @@
 var EC = protractor.ExpectedConditions;
 
+var checkoutOverviewPage = require("../locators/checkoutOverviewPage.json");
+
+
 module.exports = {
     verifyPage: function() {
-        browser.wait(EC.visibilityOf(element(by.css(".subheader"))), 10000);
-        expect(element(by.css(".subheader")).getText()).toEqual('Checkout: Overview');
+        browser.wait(EC.visibilityOf(element(by.css(checkoutOverviewPage.lblSubheader))), 10000);
+        expect(element(by.css(checkoutOverviewPage.lblSubheader)).getText()).toEqual('Checkout: Overview');
     },
 
     clickFinish: function() {
-        browser.wait(EC.visibilityOf(element(by.css("[href='./checkout-complete.html']"))), 10000);
-        element(by.css("[href='./checkout-complete.html']")).click();
+        browser.wait(EC.visibilityOf(element(by.css(checkoutOverviewPage.btnFinish))), 10000);
+        element(by.css(checkoutOverviewPage.btnFinish)).click();
     }
 }
 

@@ -1,0 +1,5 @@
+{
+    "icnShoppingCart" : "[data-icon='shopping-cart']",
+    "icnShoppingCartBadge" : ".shopping_cart_badge",
+    "itemSauceLabsBackpack" : "//div[contains(text(),'Sauce Labs Backpack')]/ancestor::div[contains(@class, 'inventory_item_label')]/following-sibling::div[contains(@class,'pricebar')]/button"
+}

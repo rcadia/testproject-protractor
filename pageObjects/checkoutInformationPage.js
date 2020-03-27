@@ -1,23 +1,25 @@
 var EC = protractor.ExpectedConditions;
 
+var checkoutInformationPage = require("../locators/checkoutInformationPage.json");
+
 module.exports = {
     enterFirstName: function() {
-        browser.wait(EC.visibilityOf(element(by.css("#first-name"))), 10000);
-        element(by.css("#first-name")).clear().sendKeys('Ross'); 
+        browser.wait(EC.visibilityOf(element(by.css(checkoutInformationPage.txtFirstName))), 10000);
+        element(by.css(checkoutInformationPage.txtFirstName)).clear().sendKeys('Ross'); 
     },
 
     enterLastname: function() {
-        browser.wait(EC.visibilityOf(element(by.css("#last-name"))), 10000);
-        element(by.css("#last-name")).clear().sendKeys('Bendal'); 
+        browser.wait(EC.visibilityOf(element(by.css(checkoutInformationPage.txtLastName))), 10000);
+        element(by.css(checkoutInformationPage.txtLastName)).clear().sendKeys('Bendal'); 
     },
 
     enterZipCode: function() {
-        browser.wait(EC.visibilityOf(element(by.css("#postal-code"))), 10000);
-        element(by.css("#postal-code")).clear().sendKeys('1234'); 
+        browser.wait(EC.visibilityOf(element(by.css(checkoutInformationPage.txtPostalCode))), 10000);
+        element(by.css(checkoutInformationPage.txtPostalCode)).clear().sendKeys('1234'); 
     },
 
     clickContinue: function() {
-        browser.wait(EC.visibilityOf(element(by.css("[value='CONTINUE']"))), 10000);
-        element(by.css("[value='CONTINUE']")).click();
+        browser.wait(EC.visibilityOf(element(by.css(checkoutInformationPage.btnContinue))), 10000);
+        element(by.css(checkoutInformationPage.btnContinue)).click();
     }
 }

@@ -1,11 +1,15 @@
 var EC = protractor.ExpectedConditions;
 
+var cartPage = require("../locators/cartPage.json");
+var checkoutInformationPage = require("../locators/checkoutInformationPage.json");
+
+
 module.exports = {
 
     clickCheckout: function() {
-        browser.wait(EC.visibilityOf(element(by.css("[href='./checkout-step-one.html']"))), 10000);
-        element(by.css("[href='./checkout-step-one.html']")).click();
-        browser.wait(EC.visibilityOf(element(by.css("[value='CONTINUE']"))), 10000);
+        browser.wait(EC.visibilityOf(element(by.css(cartPage.btnCheckout))), 10000);
+        element(by.css(cartPage.btnCheckout)).click();
+        browser.wait(EC.visibilityOf(element(by.css(checkoutInformationPage.btnContinue))), 10000);
     },
 
     verifyProductsAddedInCart: function(locator, text){
