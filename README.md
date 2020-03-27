@@ -1,4 +1,4 @@
-# testproject-protractor
+# Demo Test Project - Protractor
 
 ## Purpose
 This is a sample of Test Automation Script written in Protractor. I used Swaglab from Saucelabs to create an example of an end to end test.
@@ -12,3 +12,7 @@ The application-under-test is an e-commerce website with login, cart and payment
 
 ## JSON as a locator storage
 To add more maintainability on the tests, I've created a JSON file that stores all the locators. I've decided to create a JSON file that will represent each page of the application. In my experience, one of the main reasons why a test fails are due to the locators. Either they are too brittle or some developer updated the HTML or CSS attribute. If this happens, then we will know exactly what file are we going to access. Thus, minimizing the investigation and debugging needed to get the tests to pass again.
+
+## High Level Diagram
+
+![High-level-flow](https://i.imgur.com/okD8g4q.png)
